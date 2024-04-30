@@ -31,7 +31,7 @@ const Feature = () => {
 			</div>
 		);
 	};
-	const settings = {
+	var settings = {
 		dots: false,
 		infinite: true,
 		autoplay: true,

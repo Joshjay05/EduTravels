@@ -121,3 +121,70 @@ export const PACKAGES = [
 		duration: "30 dYA",
 	},
 ];
+
+export const TESTIMONIAL = [
+	{
+		title: "jared Martinez",
+		profession: "Director, Nova Terra",
+		URL: "/female.jpg",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+	},
+
+	{
+		title: "jared Martinez",
+		profession: "Director, Nova Terra",
+		URL: "/male.jpg",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+	},
+
+	{
+		title: "jared Martinez",
+		profession: "Director, Nova Terra",
+		URL: "/female.jpg",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+	},
+
+	{
+		title: "jared Martinez",
+		profession: "Director, Nova Terra",
+		URL: "/male.jpg",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+	},
+
+	{
+		title: "jared Martinez",
+		profession: "Director, Nova Terra",
+		URL: "/female.jpg",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+	},
+];
+
+export const FOOTER_LINKS = [
+	{
+		title: "Learn More",
+		links: [
+			"about Us",
+			"Destinations",
+			"Travel Guide",
+			"Book Now",
+			"Privacy Policy",
+		],
+	},
+	{
+		title: "Our Community",
+		links: ["terms and conditions", "customer Reviews"],
+	},
+];
+
+export const SOCIALS = {
+	// { icon: "twitter", URL: "/" },
+	// { icon: "facebook", URL: "/" },
+	// { icon: "instagram", URL: "/" },
+	// { icon: "linkedin", URL: "/" },
+	// { icon: "youtube", URL: "/" },
+	title: "Contact Us",
+	reference: [
+		{ label: "Contact Number", value: "123-456-789" },
+		{ label: "Email Address", value: "jXO2O@example.com" },
+	],
+};

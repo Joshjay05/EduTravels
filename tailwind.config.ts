@@ -43,7 +43,7 @@ const config: Config = {
 				grey: "#747A88",
 			},
 			backgroundImage: {
-				"main-bg": "url('/pattern.png')",
+				"video-bg": "url('/herobg.jpg')",
 				"hero-bg": "url('/hero.jpg')",
 			},
 			screens: {

@@ -7,7 +7,8 @@ import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 import { FEATURE } from "@/constant";
 import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
-import { settings } from "react-icons/gr";
+import { RiSearchLine } from "react-icons/ri";
+// import { settings } from "react-icons/gr";
 // import { title } from "process";
 const Feature = () => {
 	const NextArrow = (props: any) => {
@@ -77,7 +78,7 @@ const Feature = () => {
 		<section className="max-container padding-container bg-slate-10 py-12">
 			<article className="m-auto w-[90%]">
 				<h3 className="bold-32 text-center">Featured Destinations</h3>
-				<p>
+				<p className="text-center max-w-lg m-auto text-gray-30">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
 					minima similique libero error earum mollitia deserunt quae modi nisi
 					ad qui? Voluptates harum ipsum fugit recusandae pariatur ad, accusamus
@@ -106,7 +107,7 @@ type FeatureItem = {
 };
 const FeatureItem = ({ title, URL, des }: FeatureItem) => {
 	return (
-		<article className="mx-3 overflow-hidden border-slate-200 border-[1px] hover:group">
+		<article className="mx-3 overflow-hidden border border-slate-200 group">
 			<div className="overflow-hidden relative">
 				<Image
 					src={URL}
@@ -115,13 +116,14 @@ const FeatureItem = ({ title, URL, des }: FeatureItem) => {
 					height={300}
 					className="hover:scale-105 hover:rotate-2 transition-all duration-200"
 				/>
+
+				<Link
+					href={URL}
+					className="absolute top-1/2 left-1/2 h-14 w-14 bg-white flexCenter transition-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-500">
+					<RiSearchLine />
+				</Link>
 			</div>
 
-			<Link
-				href={URL}
-				className="absolute top-1/2 left-1/2 h-14 w-14 bg-white flexCenter rounded-full -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-500">
-				<BiSearch />
-			</Link>
 			<div className="px-5 py-3 bg-white">
 				<p className="capitalize text-[17px] font-[500]">{title}</p>
 				<p className="*:text-gray-50 my-2 text-[15px]">{des}</p>

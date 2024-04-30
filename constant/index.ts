@@ -1,7 +1,7 @@
 // Navigation
 import { IconType } from "react-icons";
 import { BiHotel, BiRestaurant, BiShoppingBag } from "react-icons/bi";
-import { FaEarthAfrica } from "react-icons/fa6";
+import { BsMarkerTip } from "react-icons/bs";
 import { FcAbout, FcContacts, FcPackage } from "react-icons/fc";
 import { HiHome } from "react-icons/hi";
 interface NAV {
@@ -28,7 +28,7 @@ export const NAV_LINKS: NAV[] = [
 export const CATEGORIES = [
 	{
 		title: "places",
-		icon: "faEarthAfrica",
+		icon: "markBsMarkerTip",
 	},
 	{
 		title: "restaurants",
@@ -71,5 +71,53 @@ export const FEATURE = [
 		title: "hong-kong",
 		URL: "/hongkong.jpg",
 		des: "3 places",
+	},
+];
+
+// About
+export const ABOUT = [
+	{ title: "Comfortable Journey", icon: BsMarkerTip },
+	{ title: "Luxuries Hotel", icon: BsMarkerTip },
+
+	{ title: "Travel Guide", icon: BsMarkerTip },
+	{ title: "Popular Destination", icon: BsMarkerTip },
+];
+
+export const PACKAGES = [
+	{
+		title: "Poland",
+		price: "$120",
+		URL: "/Poland.jpg",
+		des: "lorem1024",
+		duration: "30 dYA",
+	},
+	{
+		title: "Lithuania",
+		price: "$120",
+		URL: "/Lithuania.jpg",
+		des: "lorem1024",
+		duration: "30 dYA",
+	},
+	{
+		title: "Germany",
+		price: "$120",
+		URL: "/Germany.jpg",
+		des: "lorem1024",
+		duration: "30 dYA",
+	},
+
+	{
+		title: "Canada",
+		price: "$120",
+		URL: "/canada.jpg",
+		des: "lorem1024",
+		duration: "30 dYA",
+	},
+	{
+		title: "Spain",
+		price: "$120",
+		URL: "/spain.jpg",
+		des: "lorem1024",
+		duration: "30 dYA",
 	},
 ];

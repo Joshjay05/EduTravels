@@ -49,7 +49,7 @@ const Banner = () => {
 						className="w-full h-full relative"
 						priority
 					/>
-					<BannerText title="Outware Picks" />
+					<BannerText title="Work and Travel" />
 				</div>
 				{/* <div className="w-full h-full relative">
 					<Image
@@ -65,7 +65,7 @@ const Banner = () => {
 						alt="bannertwo"
 						className="w-full h-full relative"
 					/>
-					<BannerText title="Seasonal Offers" />
+					<BannerText title="Study Offers" />
 				</div>
 				<div className="w-full h-full relative">
 					<Image
@@ -73,7 +73,7 @@ const Banner = () => {
 						alt="bannerthree"
 						className="w-full h-full relative"
 					/>
-					<BannerText title="Best for men" />
+					<BannerText title="Tourism" />
 				</div>
 			</Slider>
 			<div className="absolute w-full h-44 bg-gradient-to-t from-gray-100 to-transparent bottom-0 left-0 z-10" />

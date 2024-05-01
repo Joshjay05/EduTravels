@@ -6,7 +6,7 @@ import Image from "next/image";
 const About = () => {
 	return (
 		<section className="max-container padding-container py-24">
-			<article className="flex flex-col gap-8 lg:flex-row pb-24">
+			<article className="flex flex-col gap-8 lg:flex-row  pb-24">
 				{/* left */}
 				<div className="flex flex-1 flex-col items-start justify-center">
 					<h1 className="bold-52 pb-4 capitalize">
@@ -40,24 +40,24 @@ const About = () => {
 				{/* right start */}
 
 				<div className="flex flex-1 gap-4 lg:gap-8">
-					<>
+					<div>
 						<Image
 							src={"/ruslan.jpg"}
 							alt="about"
-							width={33}
+							width={333}
 							height={400}
-							className="w-auto rounded-lg border-gray-1o mb-12"
+							className="w-auto rounded-lg border-gray-10 mb-12"
 						/>
-					</>
-					<>
+					</div>
+					<div>
 						<Image
 							src={"/brooke.jpg"}
 							alt="about"
-							width={33}
-							height={400}
-							className="w-auto rounded-lg border-gray-1o mt-12"
+							width={333}
+							height={300}
+							className="w-auto rounded-lg border-gray-10 mt-12"
 						/>
-					</>
+					</div>
 				</div>
 				{/* right end */}
 			</article>
@@ -66,28 +66,28 @@ const About = () => {
 
 			{/* second corner */}
 
-			<article className="flex flex-col gap-8 lg:flex-row pb-24">
+			<article className="flex flex-col gap-4 lg:flex-row pb-24">
 				{/*inverted  right start */}
 
 				<div className="flex flex-1 gap-4 lg:gap-8">
-					<>
+					<div>
 						<Image
 							src={"/ruslan.jpg"}
 							alt="about"
-							width={33}
+							width={333}
 							height={400}
-							className="w-auto rounded-lg border-gray-1o mb-12"
+							className="w-auto rounded-lg border-gray-10 mb-12"
 						/>
-					</>
-					<>
+					</div>
+					<div>
 						<Image
 							src={"/brooke.jpg"}
 							alt="about"
-							width={33}
+							width={333}
 							height={400}
-							className="w-auto rounded-lg border-gray-1o mt-12"
+							className="w-auto rounded-lg border-gray-10 mt-12"
 						/>
-					</>
+					</div>
 				</div>
 				{/* inverted right end */}
 				{/* left */}

@@ -60,15 +60,6 @@ const Footer = () => {
 								))}
 							</ul>
 						</FooterColumn>
-						{/* <FooterColumn title={SOCIALS.title}>
-							<ul className="flex gap-4 regular-14 text-gray-20">
-								{SOCIALS.links.map((link) => (
-									<Link href="/" key={link}>
-										<Image src={link} alt="logo" width={24} height={24} />
-									</Link>
-								))}
-							</ul>
-						</FooterColumn> */}
 					</div>
 				</div>
 			</article>

@@ -88,7 +88,7 @@ const TestimonialItem = ({ title, profession, URL, des }: TestimonialsItem) => {
 					src={URL}
 					alt="user"
 					height={55}
-					width={55}
+					width={5}
 					className="rounded-full"
 				/>
 				<div>

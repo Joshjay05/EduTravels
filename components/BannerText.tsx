@@ -5,6 +5,7 @@ import CategoryItems from "./CategoryItems";
 import Button from "./Button";
 import { CiPlane } from "react-icons/ci";
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
+import { FaTelegramPlane } from "react-icons/fa";
 
 interface Props {
 	title: string;
@@ -43,7 +44,7 @@ const BannerText = ({ title }: Props) => {
 							<Button
 								type="button"
 								title="Travel Plan"
-								icon={HiOutlinePaperAirplane}
+								icon={FaTelegramPlane}
 								variant="btn_white_rounded"
 							/>
 						</div>

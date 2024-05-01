@@ -8,6 +8,7 @@ import { FaEarthAmericas } from "react-icons/fa6";
 import { FcAbout, FcContacts, FcPackage } from "react-icons/fc";
 import { HiHome } from "react-icons/hi";
 import { IoIosContact } from "react-icons/io";
+import { IoCheckmarkCircleOutline, IoPlanetOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
 interface NAV {
 	href: string;
@@ -33,7 +34,8 @@ export const NAV_LINKS: NAV[] = [
 export const CATEGORIES = [
 	{
 		title: "places",
-		icon: BsMarkerTip,
+		// icon:ImEarth,
+		icon: IoPlanetOutline,
 	},
 	{
 		title: "restaurants",
@@ -81,11 +83,11 @@ export const FEATURE = [
 
 // About
 export const ABOUT = [
-	{ title: "Comfortable Journey", icon: BsMarkerTip },
-	{ title: "Luxuries Hotel", icon: BsMarkerTip },
+	{ title: "Comfortable Journey", icon: IoCheckmarkCircleOutline },
+	{ title: "Luxuries Hotel", icon: IoCheckmarkCircleOutline },
 
-	{ title: "Travel Guide", icon: BsMarkerTip },
-	{ title: "Popular Destination", icon: BsMarkerTip },
+	{ title: "Travel Guide", icon: IoCheckmarkCircleOutline },
+	{ title: "Popular Destination", icon: IoCheckmarkCircleOutline },
 ];
 
 export const PACKAGES = [

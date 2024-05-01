@@ -1,8 +1,15 @@
-import { FOOTER_LINKS, SOCIALS, SOCIAL_LINKS } from "@/constant";
+import { FOOTER_LINKS, SOCIALS, SOCIALS_LINKS } from "@/constant";
+import {
+	FaFacebookSquare,
+	FaInstagram,
+	FaTwitter,
+	FaYoutube,
+	FaLinkedin,
+} from "react-icons/fa";
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
-import link from "next/link";
+// import Image from "next/image";
+// import link from "next/link";
 const Footer = () => {
 	return (
 		<footer className="flexCenter mb-24 pt-20">
@@ -24,21 +31,44 @@ const Footer = () => {
 							</FooterColumn>
 						))}
 					</div>
+
+					<div className="">
+						<FooterColumn title={SOCIALS_LINKS.title}>
+							{SOCIALS_LINKS.links.map((link) => (
+								<Link
+									href="/"
+									key={link.label}
+									className="flex gap-4 md:flex-col lg:flex-row">
+									<p>{link.label}:</p>
+									<p className="medium-14">{link.value}</p>
+								</Link>
+							))}
+						</FooterColumn>
+					</div>
 					<div>
 						<FooterColumn title={SOCIALS.title}>
 							<ul className="flex gap-4">
-								{SOCIALS.reference.map((social) => (
-									<Link href={"/"} key={social.label}>
-										<Image
-											src={social.label}
-											alt="logo"
-											width={24}
-											height={24}
-										/>
+								{SOCIALS.links.map((link) => (
+									<Link href={"/"} key={link}>
+										{/* Use the appropriate icon component based on the link */}
+										{link === "/facebook.svg" && <FaFacebookSquare />}
+										{link === "/instagram.svg" && <FaInstagram />}
+										{link === "/twitter.svg" && <FaTwitter />}
+										{link === "/youtube.svg" && <FaYoutube />}
+										{link === "/linkedIn.svg" && <FaLinkedin />}
 									</Link>
 								))}
 							</ul>
 						</FooterColumn>
+						{/* <FooterColumn title={SOCIALS.title}>
+							<ul className="flex gap-4 regular-14 text-gray-20">
+								{SOCIALS.links.map((link) => (
+									<Link href="/" key={link}>
+										<Image src={link} alt="logo" width={24} height={24} />
+									</Link>
+								))}
+							</ul>
+						</FooterColumn> */}
 					</div>
 				</div>
 			</article>

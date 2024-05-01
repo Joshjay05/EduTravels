@@ -176,15 +176,26 @@ export const FOOTER_LINKS = [
 	},
 ];
 
-export const SOCIALS = {
+export const SOCIALS_LINKS = {
 	// { icon: "twitter", URL: "/" },
 	// { icon: "facebook", URL: "/" },
 	// { icon: "instagram", URL: "/" },
 	// { icon: "linkedin", URL: "/" },
 	// { icon: "youtube", URL: "/" },
 	title: "Contact Us",
-	reference: [
+	links: [
 		{ label: "Contact Number", value: "123-456-789" },
 		{ label: "Email Address", value: "jXO2O@example.com" },
+	],
+};
+
+export const SOCIALS = {
+	title: "Socials",
+	links: [
+		"/facebook.svg",
+		"/instagram.svg",
+		"/twitter.svg",
+		"/youtube.svg",
+		"/linkedIn.svg",
 	],
 };

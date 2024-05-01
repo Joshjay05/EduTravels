@@ -45,7 +45,7 @@ const Footer = () => {
 							))}
 						</FooterColumn>
 					</div>
-					<div>
+					<div className="flex">
 						<FooterColumn title={SOCIALS.title}>
 							<ul className="flex gap-4">
 								{SOCIALS.links.map((link) => (
@@ -73,7 +73,7 @@ type FooterColumnProps = {
 };
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
 	return (
-		<div className="flex flex-col gap-5">
+		<div className="flex flex-col gap-5 my-6">
 			<h4 className="bold-18 whitespace-nowrap">{title}</h4>
 			{children}
 		</div>

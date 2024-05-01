@@ -1,9 +1,14 @@
 // Navigation
 import { IconType } from "react-icons";
+import { AiOutlineHome } from "react-icons/ai";
 import { BiHotel, BiRestaurant, BiShoppingBag } from "react-icons/bi";
 import { BsMarkerTip } from "react-icons/bs";
+import { CiCircleQuestion } from "react-icons/ci";
+import { FaEarthAmericas } from "react-icons/fa6";
 import { FcAbout, FcContacts, FcPackage } from "react-icons/fc";
 import { HiHome } from "react-icons/hi";
+import { IoIosContact } from "react-icons/io";
+import { LuContact } from "react-icons/lu";
 interface NAV {
 	href: string;
 	key: string;
@@ -16,11 +21,11 @@ export const NAV_LINKS: NAV[] = [
 		href: "/",
 		key: "home",
 		label: "Home",
-		icon: HiHome,
+		icon: AiOutlineHome,
 	},
-	{ href: "/", key: "about", label: "About", icon: FcAbout },
-	{ href: "/", key: "packages", label: "Packages", icon: FcPackage },
-	{ href: "/", key: "contact", label: "Contact", icon: FcContacts },
+	{ href: "/", key: "about", label: "About", icon: CiCircleQuestion },
+	{ href: "/", key: "packages", label: "Packages", icon: FaEarthAmericas },
+	{ href: "/", key: "contact", label: "Contact", icon: IoIosContact },
 ];
 
 // CATEGORIES SECTION
@@ -28,7 +33,7 @@ export const NAV_LINKS: NAV[] = [
 export const CATEGORIES = [
 	{
 		title: "places",
-		icon: "markBsMarkerTip",
+		icon: BsMarkerTip,
 	},
 	{
 		title: "restaurants",

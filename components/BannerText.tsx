@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CategoryItems from "./CategoryItems";
 import Button from "./Button";
 import { CiPlane } from "react-icons/ci";
+import { HiOutlinePaperAirplane } from "react-icons/hi2";
 
 interface Props {
 	title: string;
@@ -37,19 +38,12 @@ const BannerText = ({ title }: Props) => {
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.7 }}
 					className="flex  gap-x-4 mt-2">
-					{/* <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold">
-						Find out more
-					</button> */}
-					{/* <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold">
-						Shop Now
-					</button> */}
-					<br />
 					<article className=" relative  sm:top-1/3 z-10">
 						<div className="mt-8">
 							<Button
 								type="button"
 								title="Travel Plan"
-								icon={CiPlane}
+								icon={HiOutlinePaperAirplane}
 								variant="btn_white_rounded"
 							/>
 						</div>

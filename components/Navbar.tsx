@@ -5,13 +5,16 @@ import Image from "next/image";
 import Button from "./Button";
 import { useState } from "react";
 import { CgLogIn } from "react-icons/cg";
+import { IoCloseCircleOutline } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false);
 	const toggleMenu = () => {
 		setShowMenu(!showMenu);
 	};
 	return (
-		<nav className="flexBetween max-container px-12 z-30 py-2 shadow-xl rounded-full ring-1 ring-slate-100 fixed w-[95%] left-[50%] top-1 translate-x-[-50%]">
+		<nav className="flexBetween bg-slate-100 max-container px-12 z-30 py-2 shadow-xl rounded-full ring-1 ring-slate-100 fixed w-[95%] left-[50%] top-1 translate-x-[-50%]">
 			<Link href={"/"} className="bold-20">
 				<span>LOGO</span>
 			</Link>
@@ -41,23 +44,15 @@ const Navbar = () => {
 			</div>
 			{/* mobile */}
 			{!showMenu ? (
-				<Image
-					src="menubar.svg"
-					alt="menuicon"
-					width={20}
-					height={20}
-					className="lg:hidden inline-block  cursor-pointer"
-					onClick={toggleMenu}
-				/>
+				<div className="lg:hidden inline-block  cursor-pointer bg-slate-10">
+					<GiHamburgerMenu className="h-6 w-6" onClick={toggleMenu} />
+				</div>
 			) : (
-				<Image
-					src="menubar.svg"
-					alt="menuicon"
-					width={20}
-					height={20}
+				<div
 					className="lg:hidden inline-block  cursor-pointer"
-					onClick={toggleMenu}
-				/>
+					onClick={toggleMenu}>
+					<IoCloseCircleOutline className="h-5 w-5" />
+				</div>
 			)}
 
 			<ul

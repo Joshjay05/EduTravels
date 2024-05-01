@@ -25,8 +25,12 @@ const BannerText = ({ title }: Props) => {
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.6 }}
 					className="text-lg text-slate-200 font-extrabold">
-					Stock up on sportswear and limited edition collections on our <br />
-					awesome mid-season sale.
+					Embark on a journey that transcends borders, where every destination
+					is an opportunity to explore, learn, and thrive. From enriching study
+					programs to exciting work opportunities, our travel experiences offer
+					the perfect blend of adventure, education, and professional growth.
+					Discover the world with us and uncover endless possibilities for
+					personal and professional development.
 				</motion.p>
 				<motion.div
 					initial={{ y: 50, opacity: 0 }}

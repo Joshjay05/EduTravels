@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
+import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import Image from "next/image";
@@ -12,8 +13,9 @@ export default function Home() {
 		<main className="">
 			<Banner />
 			{/* <Hero /> */}
-			<Feature />
 			<About />
+			<Feature />
+			<Services />
 			<Packages />
 			<Video />
 			<Testimonials />

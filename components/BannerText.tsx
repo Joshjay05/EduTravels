@@ -6,6 +6,7 @@ import Button from "./Button";
 import { CiPlane } from "react-icons/ci";
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
 import { FaTelegramPlane } from "react-icons/fa";
+import Link from "next/link";
 
 interface Props {
 	title: string;
@@ -41,12 +42,14 @@ const BannerText = ({ title }: Props) => {
 					className="flex  gap-x-4 mt-2">
 					<article className=" relative  sm:top-1/3 z-10">
 						<div className="mt-8">
-							<Button
-								type="button"
-								title="Travel Plan"
-								icon={FaTelegramPlane}
-								variant="btn_white_rounded"
-							/>
+							<Link href="#destination">
+								<Button
+									type="button"
+									title="Travel Plan"
+									icon={FaTelegramPlane}
+									variant="btn_white_rounded"
+								/>
+							</Link>
 						</div>
 
 						<h4 className="text-white my-4 bold-22">Explore the key points</h4>

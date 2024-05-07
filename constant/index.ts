@@ -3,6 +3,7 @@ import { IconType } from "react-icons";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiHotel, BiRestaurant, BiShoppingBag } from "react-icons/bi";
 import { BsMarkerTip } from "react-icons/bs";
+import { CgSupport } from "react-icons/cg";
 import { CiCircleQuestion } from "react-icons/ci";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { FcAbout, FcContacts, FcPackage } from "react-icons/fc";
@@ -10,6 +11,8 @@ import { HiHome } from "react-icons/hi";
 import { IoIosContact } from "react-icons/io";
 import { IoCheckmarkCircleOutline, IoPlanetOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
+import { MdSupportAgent } from "react-icons/md";
+import { SiCoursera } from "react-icons/si";
 interface NAV {
 	href: string;
 	key: string;
@@ -55,27 +58,42 @@ export const CATEGORIES = [
 
 export const FEATURE = [
 	{
-		title: "paris",
+		title: "Australia",
 		URL: "/paris.jpg",
 		des: "3 places",
 	},
 	{
-		title: "Australia",
+		title: "Canada",
 		URL: "/Aust.jpg",
 		des: "3 places",
 	},
 	{
-		title: "london",
+		title: "Finland",
 		URL: "/london.jpg",
 		des: "3 places",
 	},
 	{
-		title: "Germany",
+		title: "Ireland",
 		URL: "/Germany.jpg",
 		des: "3 places",
 	},
 	{
-		title: "hong-kong",
+		title: "Lithuania",
+		URL: "/hongkong.jpg",
+		des: "3 places",
+	},
+	{
+		title: "Sweden",
+		URL: "/hongkong.jpg",
+		des: "3 places",
+	},
+	{
+		title: "UK",
+		URL: "/london.jpg",
+		des: "3 places",
+	},
+	{
+		title: "US",
 		URL: "/hongkong.jpg",
 		des: "3 places",
 	},
@@ -206,3 +224,30 @@ export const SOCIALS = {
 		"/linkedIn.svg",
 	],
 };
+
+export const cardService = [
+	{
+		id: 1,
+		title: "Courses",
+		description:
+			"Begin your journey in countries with excellent opportunities with our DIY courses. Our courses have helped 2,500+ candidates discover pathways to their dream country and land great opportunities abroad.",
+		icon: SiCoursera,
+		color: "red",
+	},
+	{
+		id: 2,
+		title: "Work Visa Support",
+		description:
+			"Want to move abroad without a job? There are countries that allow you to move in with a Job Seeker Visa, Digital Nomad Visa, and Passive Income Visa and live there for a period of time. We help you navigate the complex approval process for these new-age visas",
+		icon: CgSupport,
+		color: "blue", //
+	},
+	{
+		id: 3,
+		title: "Job Support Service",
+		description:
+			"Want to move abroad with a job that aligns with your expectations? We strategize your job search with our global experience and help you build a profile that attracts the attention of your target recruiters abroad.",
+		icon: MdSupportAgent,
+		color: "green",
+	},
+];

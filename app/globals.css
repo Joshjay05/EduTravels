@@ -15,6 +15,18 @@
 	background: linear-gradient(97deg, #4066ff 4%, #2949c6 100%);
 }
 
+.bg-red {
+	background-color: rgb(255, 213, 213);
+}
+
+.bg-blue {
+	background-color: rgb(173, 215, 243);
+}
+
+.bg-green {
+	background-color: rgb(255, 236, 194);
+}
+
 @layer utilities {
 	.btn_white_rounded {
 		@apply bg-white px-8 py-4 text-gray-90;

@@ -7,6 +7,7 @@ type ButtonProps = {
 	icon?: IconType; // Adjusted type for icon prop
 	variant: string;
 	children?: ReactNode;
+	onClick?: () => void;
 };
 
 const Button = ({

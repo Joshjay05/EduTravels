@@ -8,15 +8,18 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 // import link from "next/link";
 const Footer = () => {
 	return (
 		<footer className="flexCenter mb-24 pt-20">
 			<article className="padding-container max-container flex w-full flex-col gap-14">
 				<div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-					<Link href="/ className=" mb-10 bold-20>
-						LOGO
+					{/* <Link href="/ className=" mb-10 bold-20>
+						<Image src="/logo.jpg" alt="logo" width={50} height={50} />
+					</Link> */}
+					<Link href={"/"} className="mb-10 bold-20 rounded-full">
+						<Image src="/logo.jpg" alt="logo" width={150} height={150} />
 					</Link>
 					<div className="flex flex-wrap gap-8 sm:justify-between md:flex-1">
 						{FOOTER_LINKS.map((col) => (

@@ -264,7 +264,8 @@ export const serviceCard = [
 		id: 1,
 		src: "/serviceCard1.png",
 		title: "Sales",
-		description: "Begin your journey in countries with our DIY courses.",
+		description:
+			"Caudex Clerk | Store Accountant | Store Keeper Electrical | Store Keeper Senior Grade | Store Keeper Junior Grade.",
 	},
 	{
 		id: 2,
@@ -278,7 +279,7 @@ export const serviceCard = [
 		src: "/serviceCard2.png",
 		title: "Health care",
 		description:
-			"The healthcare sector is grappling with a shortage of professionals such as nursing assistants, midwives, and doctors. This presents abundant opportunities for individuals in the healthcare field to contribute to addressing the growing healthcare needs in Sweden.",
+			"Physicians | Dentists | Pharmacists | Pharmacy | Technicians | Nurses | Surgeons | Surgeon's assistant.",
 	},
 	{
 		id: 4,
@@ -291,6 +292,7 @@ export const serviceCard = [
 		id: 5,
 		src: "/serviceCard2.png",
 		title: "Admin",
-		description: "Begin your journey in countries with our DIY courses. ",
+		description:
+			"Camp Manager | Camp Supervisor | Camp Security Officer | Camp Labour Relations Supervisor | Camp Clerk ",
 	},
 ];

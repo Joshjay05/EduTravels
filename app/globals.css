@@ -11,6 +11,14 @@
 	font-family: "Manrope", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Manrope", sans-serif;
+}
+
 .linearGradient {
 	background: linear-gradient(97deg, #4066ff 4%, #2949c6 100%);
 }

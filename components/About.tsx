@@ -3,7 +3,7 @@ import React from "react";
 import { ABOUT, cardService } from "@/constant";
 import { IconType } from "react-icons";
 import Image from "next/image";
-import Card from "./Card";
+// import Card from "./Card";
 const About = () => {
 	return (
 		<section className="max-container padding-container py-24">

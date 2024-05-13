@@ -255,42 +255,42 @@ export const cardService = [
 export const serviceCard = [
 	{
 		id: 0,
-		src: "/serviceCard1.png",
+		src: "/education.jpg",
 		title: "Education",
 		description:
 			" In 2023, the education sector in Sweden faced notable labor shortages and it continues to see the same. There are increasing opportunities for educators, especially in primary and special needs education, as the demand for qualified teaching professionals continues to grow.",
 	},
 	{
 		id: 1,
-		src: "/serviceCard1.png",
+		src: "/salegroup.jpg",
 		title: "Sales",
 		description:
 			"Caudex Clerk | Store Accountant | Store Keeper Electrical | Store Keeper Senior Grade | Store Keeper Junior Grade.",
 	},
 	{
 		id: 2,
-		src: "/serviceCard2.png",
+		src: "/construction.jpg",
 		title: "Construction",
 		description:
 			"Carpenter Foreman | Mason Foreman | Painter Foreman | Earthwalk Foreman | Pipeline Foreman.",
 	},
 	{
 		id: 3,
-		src: "/serviceCard2.png",
+		src: "/health.jpg",
 		title: "Health care",
 		description:
 			"Physicians | Dentists | Pharmacists | Pharmacy | Technicians | Nurses | Surgeons | Surgeon's assistant.",
 	},
 	{
 		id: 4,
-		src: "/serviceCard2.png",
+		src: "/IT.jpg",
 		title: "IT",
 		description:
 			"The IT sector is experiencing a significant shortfall in skilled workers. Software developers and IT architects are in high demand, reflecting the increased reliance on technology and the digital transformation of various industries, offering substantial job opportunities in this field.",
 	},
 	{
 		id: 5,
-		src: "/serviceCard2.png",
+		src: "/admin.jpg",
 		title: "Admin",
 		description:
 			"Camp Manager | Camp Supervisor | Camp Security Officer | Camp Labour Relations Supervisor | Camp Clerk ",

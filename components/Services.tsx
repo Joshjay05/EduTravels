@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+
 import { cardService } from "@/constant";
 import React from "react";
 import Card from "./Card";
@@ -8,7 +8,7 @@ import Link from "next/link";
 import Servspages from "@/app/servicePage";
 
 const Services = () => {
-	const router = useRouter();
+
 	return (
 		<section className="max-container padding-container py-24">
 			<article className="flex flex-col gap-8 ">

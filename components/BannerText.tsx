@@ -20,14 +20,14 @@ const BannerText = ({ title }: Props) => {
 					initial={{ y: 30, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.5 }}
-					className="lg:text-7xl md:text-base font-bold text-white">
+					className="lg:text-7xl md:text-base my-2 font-bold text-white">
 					{title}
 				</motion.h2>
 				<motion.p
 					initial={{ y: 40, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.6 }}
-					className="text-lg text-slate-200 font-extrabold">
+					className="text-lg shadow-sm border rounded-sm bg-slate-50 text-slate-600 p-4 leading-10 font-extrabold">
 					Embark on a journey that transcends borders, where every destination
 					is an opportunity to explore, learn, and thrive. From enriching study
 					programs to exciting work opportunities, our travel experiences offer

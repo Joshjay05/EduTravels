@@ -27,7 +27,7 @@ const BannerText = ({ title }: Props) => {
 					initial={{ y: 40, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.6 }}
-					className="text-lg shadow-sm border rounded-sm bg-slate-50 text-slate-600 p-4 leading-10 font-extrabold">
+					className="text-lg shadow-sm border border-hidden rounded-sm bg-[#02020229] text-white p-4 leading-10 font-extrabold">
 					Embark on a journey that transcends borders, where every destination
 					is an opportunity to explore, learn, and thrive. From enriching study
 					programs to exciting work opportunities, our travel experiences offer

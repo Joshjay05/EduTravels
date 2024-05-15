@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
 	title: "Everywhere we go consult",
 	description: "Tour and Travel App",
+	// icon: "/logo.jpg",
 };
 
 export default function RootLayout({
@@ -15,6 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<link rel="icon" href="/logo.jpg" />
 			<body>
 				<Navbar />
 				<main className="relative overflow-hidden">{children}</main>

@@ -119,7 +119,7 @@ const FeatureItem = ({ title, URL, des }: FeatureItem) => {
 
 				<Link
 					href={URL}
-					className="absolute top-1/2 left-1/2 h-14 w-14 bg-white flexCenter transition-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-500">
+					className="absolute top-1/2 left-1/2 h-14 w-14 bg-white flexCenter transition-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-500 rounded-full">
 					<RiSearchLine />
 				</Link>
 			</div>

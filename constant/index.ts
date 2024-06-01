@@ -5,6 +5,13 @@ import { BiHotel, BiRestaurant, BiShoppingBag } from "react-icons/bi";
 import { BsMarkerTip } from "react-icons/bs";
 import { CgSupport } from "react-icons/cg";
 import { CiCircleQuestion } from "react-icons/ci";
+import {
+	FaFacebookSquare,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+	FaYoutube,
+} from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { FcAbout, FcContacts, FcPackage } from "react-icons/fc";
 import { HiHome } from "react-icons/hi";
@@ -228,11 +235,6 @@ export const FOOTER_LINKS = [
 ];
 
 export const SOCIALS_LINKS = {
-	// { icon: "twitter", URL: "/" },
-	// { icon: "facebook", URL: "/" },
-	// { icon: "instagram", URL: "/" },
-	// { icon: "linkedin", URL: "/" },
-	// { icon: "youtube", URL: "/" },
 	title: "Contact Us",
 	links: [
 		{ label: "Contact Number", value: "+234 913 381 9948" },
@@ -243,11 +245,19 @@ export const SOCIALS_LINKS = {
 export const SOCIALS = {
 	title: "Socials",
 	links: [
-		"/facebook.svg",
-		"/instagram.svg",
-		"/twitter.svg",
-		"/youtube.svg",
-		"/linkedIn.svg",
+		{
+			id: 1,
+			href: "https://www.facebook.com/aleroseling",
+			icon: FaFacebookSquare,
+		},
+		{
+			id: 2,
+			href: "https://www.instagram.com/aleroseline/",
+			icon: FaInstagram,
+		},
+		// { id: 3, href: "https://www.twitter.com", icon: FaTwitter },
+		// { id: 4, href: "https://www.youtube.com", icon: FaYoutube },
+		// { id: 5, href: "https://www.linkedin.com", icon: FaLinkedin },
 	],
 };
 

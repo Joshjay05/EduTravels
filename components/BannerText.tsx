@@ -42,7 +42,7 @@ const BannerText = ({ title }: Props) => {
 					className="flex  gap-x-4 mt-2">
 					<article className=" relative  sm:top-1/3 z-10">
 						<div className="mt-8">
-							<Link href="#destination">
+							<Link href="#feature">
 								<Button
 									type="button"
 									title="Travel Plan"

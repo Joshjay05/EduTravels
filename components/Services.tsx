@@ -8,7 +8,6 @@ import Link from "next/link";
 import Servspages from "@/app/servicePage";
 
 const Services = () => {
-
 	return (
 		<section className="max-container padding-container py-24">
 			<article className="flex flex-col gap-8 ">
@@ -33,7 +32,7 @@ const Services = () => {
 				<Servspages />
 			</>
 			<Link
-				href="mailto:your-email@example.com"
+				href="mailto:everywherewegoconsult.org"
 				className="flex flexCenter my-6">
 				<Button
 					type={"button"}

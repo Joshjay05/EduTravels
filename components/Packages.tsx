@@ -106,7 +106,7 @@ const PackageItem = ({ title, URL, price, des, duration }: PackagesItem) => {
 						<span className="medium">{duration}</span>
 					</p>
 					<Link
-						href="/"
+						href="https://wa.me/message/IF4D22J3UN73O1"
 						className="medium-14 px-4 py-2 rounded-md border bg-black text-white">
 						<span> Book Now</span>
 					</Link>

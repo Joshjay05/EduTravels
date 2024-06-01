@@ -75,7 +75,9 @@ const Feature = () => {
 		],
 	};
 	return (
-		<section className="max-container padding-container bg-slate-10 py-12">
+		<section
+			id="feature"
+			className="max-container padding-container bg-slate-10 py-12">
 			<article className="m-auto w-[90%]">
 				<h3 className="bold-32 text-center">Featured Destinations</h3>
 				<p className="text-center max-w-lg m-auto text-gray-30">
@@ -88,6 +90,7 @@ const Feature = () => {
 					<Slider {...settings}>
 						{FEATURE.map((feature) => (
 							<FeatureItem
+								key={FEATURE.indexOf(feature)}
 								title={feature.title}
 								URL={feature.URL}
 								des={feature.des}

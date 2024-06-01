@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import link from "next/link";
 // import link from "next/link";
 const Footer = () => {
 	return (
@@ -51,15 +52,12 @@ const Footer = () => {
 					<div className="flex">
 						<FooterColumn title={SOCIALS.title}>
 							<ul className="flex gap-4">
-								{SOCIALS.links.map((link) => (
-									<Link href={"/"} key={link}>
-										{/* Use the appropriate icon component based on the link */}
-										{link === "/facebook.svg" && <FaFacebookSquare />}
-										{link === "/instagram.svg" && <FaInstagram />}
-										{link === "/twitter.svg" && <FaTwitter />}
-										{link === "/youtube.svg" && <FaYoutube />}
-										{link === "/linkedIn.svg" && <FaLinkedin />}
-									</Link>
+								{SOCIALS.links.map((link, id) => (
+									<li key={link.id}>
+										<Link href={link.href} passHref>
+											<link.icon className="text-2xl" />
+										</Link>
+									</li>
 								))}
 							</ul>
 						</FooterColumn>

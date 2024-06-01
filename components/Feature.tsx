@@ -79,10 +79,10 @@ const Feature = () => {
 			<article className="m-auto w-[90%]">
 				<h3 className="bold-32 text-center">Featured Destinations</h3>
 				<p className="text-center max-w-lg m-auto text-gray-30">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-					minima similique libero error earum mollitia deserunt quae modi nisi
-					ad qui? Voluptates harum ipsum fugit recusandae pariatur ad, accusamus
-					optio hic animi dolorum minus.
+					Discover the world’s most enchanting places with our top travel
+					destinations. Each location offers unique experiences, breathtaking
+					landscapes, and unforgettable memories. Here’s a glimpse into some of
+					the amazing destinations we recommend:
 				</p>
 				<div className="pt-16">
 					<Slider {...settings}>

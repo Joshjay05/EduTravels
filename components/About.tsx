@@ -6,7 +6,7 @@ import Image from "next/image";
 // import Card from "./Card";
 const About = () => {
 	return (
-		<section className="max-container padding-container py-24">
+		<section id="about" className="max-container padding-container py-24">
 			<article className="flex flex-col gap-8">
 				<h1 className="bold text-3xl capitalize text-center">About Us</h1>
 				<p className="mb-28 leading-10">

@@ -49,10 +49,10 @@ const Testimonials = () => {
 		<section className="padding-container max-container pt-16 bg-slate-50">
 			<h3 className="bold-32 text-center">Testimonials</h3>
 			<p className="text-center max-w-lg m-auto text-gray-30">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-				minima similique libero error earum mollitia deserunt quae modi nisi ad
-				qui? Voluptates harum ipsum fugit recusandae pariatur ad, accusamus
-				optio hic animi dolorum minus.
+				Our clients consistently share their remarkable experiences with us,
+				highlighting how our services have transformed their travels into
+				unforgettable adventures. Join our satisfied clients and create your own
+				unforgettable travel story. Here are some of their stories:
 			</p>
 
 			<Slider {...settings}>
@@ -78,7 +78,7 @@ type TestimonialsItem = {
 };
 const TestimonialItem = ({ title, profession, URL, des }: TestimonialsItem) => {
 	return (
-		<div className="mx-4 my-12 relative px-8 py-12 rounded-md bg-white z-10">
+		<div className=" h-[350px] mx-4 my-12 relative px-8 py-12 rounded-md bg-white z-10">
 			<span className="text-slate-10 text-9xl absolute -top-4 -right-4 -z-10">
 				<RiDoubleQuotesR />
 			</span>

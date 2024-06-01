@@ -27,9 +27,14 @@ export const NAV_LINKS: NAV[] = [
 		label: "Home",
 		icon: AiOutlineHome,
 	},
-	{ href: "/", key: "about", label: "About", icon: CiCircleQuestion },
-	{ href: "/", key: "packages", label: "Packages", icon: FaEarthAmericas },
-	{ href: "/", key: "contact", label: "Contact", icon: IoIosContact },
+	{ href: "#about", key: "about", label: "About", icon: CiCircleQuestion },
+	{
+		href: "#packages",
+		key: "packages",
+		label: "Packages",
+		icon: FaEarthAmericas,
+	},
+	{ href: "#footer", key: "contact", label: "Contact", icon: IoIosContact },
 ];
 
 // CATEGORIES SECTION
@@ -60,42 +65,42 @@ export const FEATURE = [
 	{
 		title: "Australia",
 		URL: "/paris.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "Canada",
 		URL: "/Aust.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "Finland",
 		URL: "/london.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "Ireland",
 		URL: "/Germany.jpg",
-		des: "3 places",
+		des: " ",
 	},
 	{
 		title: "Lithuania",
 		URL: "/hongkong.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "Sweden",
 		URL: "/hongkong.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "UK",
 		URL: "/london.jpg",
-		des: "3 places",
+		des: "",
 	},
 	{
 		title: "US",
 		URL: "/hongkong.jpg",
-		des: "3 places",
+		des: "",
 	},
 ];
 
@@ -111,66 +116,66 @@ export const ABOUT = [
 export const PACKAGES = [
 	{
 		title: "Sweden",
-		price: "$",
+		price: "",
 		URL: "/sweden.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "Lithuania",
-		price: "$120",
+		price: "",
 		URL: "/Lithuania.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "USA",
-		price: "$120",
+		price: "",
 		URL: "/usa.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 
 	{
 		title: "UK",
-		price: "$120",
+		price: "",
 		URL: "/newyork.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "Ireland",
-		price: "$120",
+		price: "",
 		URL: "/Ireland.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "Canada",
-		price: "$120",
+		price: "",
 		URL: "/canadian.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "Australia",
-		price: "$120",
+		price: "",
 		URL: "/Australiaa.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 	{
 		title: "Finland",
-		price: "$120",
+		price: "",
 		URL: "/finland.jpg",
-		des: "lorem1024",
+		des: "",
 		duration: "30 dYA",
 	},
 ];
 
 export const TESTIMONIAL = [
 	{
-		title: "jared Martinez",
+		title: "Marie ",
 		profession: "Director, Nova Terra",
 		URL: "/female.jpg",
 		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
@@ -184,24 +189,24 @@ export const TESTIMONIAL = [
 	},
 
 	{
-		title: "jared Martinez",
+		title: "Estelle",
 		profession: "Director, Nova Terra",
 		URL: "/female.jpg",
-		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+		desc: "Paris is always a good idea, but your team's expertise made it exceptional. The private Louvre tour, romantic Seine River cruise, and delicious food tours were highlights. Every detail was handled with care, making our trip truly memorable.",
 	},
 
 	{
-		title: "jared Martinez",
+		title: "E.D. Martinez",
 		profession: "Director, Nova Terra",
 		URL: "/male.jpg",
-		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+		desc: "The luxurious resort, serene yoga retreats, and thrilling water sports created the ideal vacation. Your team's local knowledge and thoughtful planning exceeded our expectations.",
 	},
 
 	{
-		title: "jared Martinez",
+		title: "Marie Kernell",
 		profession: "Director, Nova Terra",
 		URL: "/female.jpg",
-		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+		desc: "The guided tours were informative and engaging, and the tea ceremony was a highlight. Thank you for an unforgettable experience.",
 	},
 ];
 
@@ -230,8 +235,8 @@ export const SOCIALS_LINKS = {
 	// { icon: "youtube", URL: "/" },
 	title: "Contact Us",
 	links: [
-		{ label: "Contact Number", value: "123-456-789" },
-		{ label: "Email Address", value: "jXO2O@example.com" },
+		{ label: "Contact Number", value: "+234 913 381 9948" },
+		{ label: "Email Address", value: "everywherewegoconsult.org" },
 	],
 };
 

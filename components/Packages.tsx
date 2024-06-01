@@ -8,10 +8,10 @@ const Packages = () => {
 		<section className="max-container padding-container pt-16 bg-slate-100 ">
 			<h1 className="bold-32 text-center">Our packages</h1>
 			<p className="text-center max-w-lg m-auto text-gray-30">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-				minima similique libero error earum mollitia deserunt quae modi nisi ad
-				qui? Voluptates harum ipsum fugit recusandae pariatur ad, accusamus
-				optio hic animi dolorum minus.
+				Introducing our curated selection of travel packages designed to cater
+				to a variety of interests and preferences. Whether you're seeking
+				adventure, relaxation, cultural experiences, or family fun, we have the
+				perfect package for you.
 			</p>
 			<div className="grid grid-cos-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-12">
 				{PACKAGES.map((card) => (
@@ -76,7 +76,9 @@ interface PackagesItem {
 // };
 const PackageItem = ({ title, URL, price, des, duration }: PackagesItem) => {
 	return (
-		<section className="overflow-hidden rounded-tr-xl border border-slate-200 group">
+		<section
+			id="packages"
+			className="overflow-hidden rounded-tr-xl border border-slate-200 group">
 			<article className="relative overflow-hidden h-80">
 				{" "}
 				{/* Set a fixed height for the image container */}

@@ -38,7 +38,9 @@ const Services = () => {
 			<>
 				<Servspages />
 			</>
-			<div className="flex items-center justify-center my-6">
+			<div
+				className="flex items-center justify-center my-6"
+				onClick={handleButtonClick}>
 				<Button
 					type="button"
 					title="Get Started..."

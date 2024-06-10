@@ -6,10 +6,10 @@ import nodemailer from "nodemailer";
 const transporter = nodemailer.createTransport({
 	host: "smtp.hostinger.com",
 	port: 465,
-	secure: true, // true for 465, false for other ports
+	secure: true, 
 	auth: {
-		user: process.env.EMAIL_USER, // Use environment variable
-		pass: process.env.EMAIL_PASS, // Use environment variable
+		user: process.env.EMAIL_USER, 
+		pass: process.env.EMAIL_PASS, 
 	},
 });
 

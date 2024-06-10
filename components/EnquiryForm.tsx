@@ -38,11 +38,11 @@ const EnquiryForm: React.FC = () => {
     const handleSubmit = useCallback(
         async (event: FormEvent) => {
             event.preventDefault();
-
+    
             const category =
                 selectedCategory === "both" ? specificCategory : selectedCategory;
-
-            const response = await fetch("/api/route", {
+    
+            const response = await fetch("/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const EnquiryForm: React.FC = () => {
                     state: selectedState,
                 }),
             });
-
+    
             if (response.ok) {
                 alert("Email sent successfully");
                 setName("");

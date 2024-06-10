@@ -42,7 +42,7 @@ const EnquiryForm: React.FC = () => {
             const category =
                 selectedCategory === "both" ? specificCategory : selectedCategory;
     
-            const response = await fetch("/api/send-email", {
+            const response = await fetch("api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -332,3 +332,28 @@ export const serviceCard = [
 			"Camp Manager | Camp Supervisor | Camp Security Officer | Camp Labour Relations Supervisor | Camp Clerk ",
 	},
 ];
+
+interface Country {
+	name: string;
+	category: string;
+	states: string[];
+}
+
+export const countriesData: Country[] = [
+	{
+		name: "United States",
+		category: "both",
+		states: ["California", "Texas", "New York"],
+	},
+	{
+		name: "India",
+		category: "study",
+		states: ["Maharashtra", "Karnataka", "Tamil Nadu"],
+	},
+	{
+		name: "Australia",
+		category: "work",
+		states: ["New South Wales", "Victoria", "Queensland"],
+	},
+	// Add more countries and their categories and states as needed
+];

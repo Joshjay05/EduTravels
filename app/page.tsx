@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import EnquiryForm from "@/components/EnquiryForm";
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
@@ -19,6 +20,7 @@ export default function Home() {
 			<Services />
 			{/* <Servspages /> */}
 			<Packages />
+			<EnquiryForm />
 			<Video />
 			<Testimonials />
 		</main>

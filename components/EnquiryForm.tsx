@@ -3,7 +3,11 @@
 import React, { useState, ChangeEvent, FormEvent, useCallback } from "react";
 import { countriesData } from "@/constant";
 
-const EnquiryForm: React.FC = () => {
+interface EnquiryFormProps {
+    onSubmitSuccess: () => void;
+}
+
+const EnquiryForm: React.FC<EnquiryFormProps> = ({ onSubmitSuccess }) => {
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [selectedCountry, setSelectedCountry] = useState<string>("");
@@ -65,6 +69,8 @@ const EnquiryForm: React.FC = () => {
                 setStates([]);
                 setSelectedState("");
                 setSpecificCategory("");
+                console.log("Calling onSubmitSuccess callback");
+                onSubmitSuccess(); 
             } else {
                 alert("Failed to send email");
             }
@@ -76,6 +82,7 @@ const EnquiryForm: React.FC = () => {
             selectedCategory,
             specificCategory,
             selectedState,
+            onSubmitSuccess,
         ]
     );
 

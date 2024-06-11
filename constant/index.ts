@@ -178,40 +178,47 @@ export const PACKAGES = [
 		des: "",
 		duration: "30 dYA",
 	},
+	{
+		title: "Croatia",
+		price: "",
+		URL: "/croatia.jpg",
+		des: "",
+		duration: "30 dYA",
+	},
 ];
 
 export const TESTIMONIAL = [
 	{
 		title: "Marie ",
-		profession: "Director, Nova Terra",
+		profession: "",
 		URL: "/female.jpg",
 		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
 	},
 
 	{
 		title: "jared Martinez",
-		profession: "Director, Nova Terra",
+		profession: "",
 		URL: "/male.jpg",
 		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
 	},
 
 	{
 		title: "Estelle",
-		profession: "Director, Nova Terra",
+		profession: "",
 		URL: "/female.jpg",
 		desc: "Paris is always a good idea, but your team's expertise made it exceptional. The private Louvre tour, romantic Seine River cruise, and delicious food tours were highlights. Every detail was handled with care, making our trip truly memorable.",
 	},
 
 	{
 		title: "E.D. Martinez",
-		profession: "Director, Nova Terra",
+		profession: "",
 		URL: "/male.jpg",
 		desc: "The luxurious resort, serene yoga retreats, and thrilling water sports created the ideal vacation. Your team's local knowledge and thoughtful planning exceeded our expectations.",
 	},
 
 	{
 		title: "Marie Kernell",
-		profession: "Director, Nova Terra",
+		profession: "",
 		URL: "/female.jpg",
 		desc: "The guided tours were informative and engaging, and the tea ceremony was a highlight. Thank you for an unforgettable experience.",
 	},
@@ -299,23 +306,23 @@ export const serviceCard = [
 	{
 		id: 1,
 		src: "/salegroup.jpg",
-		title: "Sales",
+		title: "Logistics",
 		description:
-			"Caudex Clerk | Store Accountant | Store Keeper Electrical | Store Keeper Senior Grade | Store Keeper Junior Grade.",
+			"Truck driving | Bus driving | Dispatch.",
 	},
 	{
 		id: 2,
 		src: "/construction.jpg",
 		title: "Construction",
 		description:
-			"Carpenter Foreman | Mason Foreman | Painter Foreman | Earthwalk Foreman | Pipeline Foreman.",
+			"Roofing | Plastering | Carpenters | Plumber | Electrician",
 	},
 	{
 		id: 3,
 		src: "/health.jpg",
 		title: "Health care",
 		description:
-			"Physicians | Dentists | Pharmacists | Pharmacy | Technicians | Nurses | Surgeons | Surgeon's assistant.",
+			"Nursing | Doctors | Care assistance",
 	},
 	{
 		id: 4,
@@ -329,11 +336,11 @@ export const serviceCard = [
 		src: "/admin.jpg",
 		title: "Admin",
 		description:
-			"Camp Manager | Camp Supervisor | Camp Security Officer | Camp Labour Relations Supervisor | Camp Clerk ",
+			"",
 	},
 ];
 
-interface Country {
+export interface Country {
 	name: string;
 	category: string;
 	states: string[];
@@ -346,14 +353,54 @@ export const countriesData: Country[] = [
 		states: ["California", "Texas", "New York"],
 	},
 	{
-		name: "India",
+		name: "Canada",
+		category: "both",
+		states: ["Ontario", "British Columbia", "Alberta"],
+	},
+	{
+		name: "Ireland",
+		category: "both",
+		states: ["Dublin", "Cork", "Galway"],
+	},
+	{
+		name: "Lithuania",
+		category: "both",
+		states: [" Vilnius", "Kaunas", "Klaipeda"],
+	},
+	{
+		name: "Poland",
+		category: "work",
+		states: [" Wroclaw", "Gdansk", "Poznan"],
+	},
+	{
+		name: "Croatia",
+		category: "work",
+		states: [" Zagreb", "Split", "Rijeka"],
+	},
+	{
+		name: "Germany",
+		category: "work",
+		states: [" Berlin", "Hamburg", "Munich"],
+	},
+	{
+		name: "Sweden",
 		category: "study",
-		states: ["Maharashtra", "Karnataka", "Tamil Nadu"],
+		states: [" Stockholm", "Malmo", "Uppsala"],
 	},
 	{
 		name: "Australia",
-		category: "work",
-		states: ["New South Wales", "Victoria", "Queensland"],
+		category: "study",
+		states: ["Sydney", "Melbourne", "Brisbane"],
 	},
-	// Add more countries and their categories and states as needed
+	{
+		name: "Finland",
+		category: "study",
+		states: [" Helsinki", "Oulu", "Turku"],
+	},
+	{
+		name: "Uk",
+		category: "study",
+		states: [" London", "Manchester", "Bristol"],
+	},
+
 ];

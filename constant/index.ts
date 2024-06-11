@@ -109,6 +109,11 @@ export const FEATURE = [
 		URL: "/hongkong.jpg",
 		des: "",
 	},
+	{
+		title: "Croatia",
+		URL: "/Croa.jpg",
+		des: "",
+	},
 ];
 
 // About

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-// import cors from "cors";
+
 
 const transporter = nodemailer.createTransport({
   host: "smtp.hostinger.com",
@@ -12,15 +12,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Cors middleware configuration
-// const corsMiddleware = cors({
-//   origin: "*", // Change this to your frontend URL in production
-//   methods: ["POST"],
-// });
+
 
 export async function POST(req: NextRequest) {
   try {
-    // await corsMiddleware(req.raw, req.res);
 
     const { name, email, country, category, state } = await req.json();
 

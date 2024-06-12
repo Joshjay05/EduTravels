@@ -5,6 +5,8 @@ const nextConfig = {
       EMAIL_PASS: process.env.EMAIL_PASS,
     },
     async headers() {
+    
+        //cor
       return [
         {
           source: "/api/:path*",

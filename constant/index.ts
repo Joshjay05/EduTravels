@@ -211,7 +211,7 @@ export const TESTIMONIAL = [
 		title: "Estelle",
 		profession: "",
 		URL: "/female.jpg",
-		desc: "Paris is always a good idea, but your team's expertise made it exceptional. The private Louvre tour, romantic Seine River cruise, and delicious food tours were highlights. Every detail was handled with care, making our trip truly memorable.",
+		desc: "Paris is always a good idea, but your team's expertise made it exceptional.  Every detail was handled with care, making our trip truly memorable.",
 	},
 
 	{

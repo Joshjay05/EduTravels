@@ -204,7 +204,7 @@ export const TESTIMONIAL = [
 		title: "jared Martinez",
 		profession: "",
 		URL: "/male.jpg",
-		desc: "Fantastic destinations, Knowledge guides, seamless logistics",
+		desc: "Fantastic destinations, Knowledge guides, seamless logistics and friendly staff.",
 	},
 
 	{

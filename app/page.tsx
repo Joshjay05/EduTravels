@@ -15,8 +15,8 @@ export default function Home() {
 		<main className="">
 			<Banner />
 			{/* <Hero /> */}
-			<About />
 			<Feature />
+			<About />
 			<Packages />
 			<Services />
 			<Video />

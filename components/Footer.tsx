@@ -20,7 +20,7 @@ const Footer = () => {
 						<Image src="/logo.jpg" alt="logo" width={50} height={50} />
 					</Link> */}
 					<Link href={"/"} className="mb-10 bold-20 rounded-full">
-						<Image src="/logo.jpg" alt="logo" width={150} height={150} />
+						<Image src="/loo.jpg" alt="logo" width={150} height={150} />
 					</Link>
 					<div className="flex flex-wrap gap-8 sm:justify-between md:flex-1">
 						{FOOTER_LINKS.map((col) => (

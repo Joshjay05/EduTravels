@@ -2,7 +2,6 @@
 
 import React, { useState, ChangeEvent, FormEvent, useCallback } from "react";
 import { countriesData } from "@/constant";
-
 interface EnquiryFormProps {
     onSubmitSuccess: () => void;
 }

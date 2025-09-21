@@ -1,38 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Travel Made Easy
+
+A full-featured travel platform with both web and mobile applications, built with modern technologies and best practices.
+
+## Features
+
+- Explore countries, hotels, restaurants, and shopping locations
+- Search and filter destinations and businesses
+- Plan trip itineraries (scheduling places, flights, hotels)
+- Manage travel to-do lists and expenses
+- Browse shopping categories with e-commerce links
+- User accounts with saved itineraries and favorites
+- Flight/transport search and tracking
+- Currency converter
+- Location-based recommendations (GPS)
+- Reviews and ratings system with wishlists
+
+## Tech Stack
+
+### Frontend (Web)
+
+- Next.js 14 with TypeScript
+- React 18
+- Tailwind CSS for styling
+- Material-UI components
+- Framer Motion for animations
+
+### Frontend (Mobile)
+
+- React Native (coming soon)
+- Expo (planned)
+
+### Backend
+
+- Node.js with Express
+- PostgreSQL database
+- Redis for caching
+- AWS services (planned)
+
+## Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── (auth)/            # Authentication routes
+│   ├── (dashboard)/       # Dashboard routes
+│   ├── (explore)/         # Explore features
+│   └── api/               # API routes
+├── components/            # Reusable components
+│   ├── common/           # Shared components
+│   ├── features/         # Feature-specific components
+│   └── layout/           # Layout components
+├── lib/                  # Utility functions and shared logic
+├── styles/              # Global styles
+├── types/               # TypeScript type definitions
+└── public/              # Static assets
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env.local
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Development Phases
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Phase 1: MVP
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Basic exploration and search functionality
+- Simple itinerary builder
+- User authentication
+- Geolocation features
+- Core backend setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Phase 2: Expanded Features
 
-## Learn More
+- Flight search integration
+- Currency converter
+- Shopping/e-commerce features
+- Trip management tools
+- Reviews and ratings system
 
-To learn more about Next.js, take a look at the following resources:
+### Phase 3: Performance & Scaling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Performance optimization
+- Advanced search and recommendations
+- Infrastructure scaling
+- Analytics integration
+- Mobile app deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 # EduTravels

@@ -1,0 +1,123 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String      @id @default(cuid())
+  email       String      @unique
+  name        String
+  password    String
+  image       String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  reviews     Review[]
+  itineraries Itinerary[]
+  favorites   Favorite[]
+}
+
+model Destination {
+  id          String     @id @default(cuid())
+  name        String
+  country     String
+  city        String
+  description String
+  image       String
+  rating      Float      @default(0)
+  reviews     Review[]
+  coordinates Json // Stores latitude and longitude
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  favorites   Favorite[]
+}
+
+model Review {
+  id            String      @id @default(cuid())
+  rating        Int
+  comment       String
+  createdAt     DateTime    @default(now())
+  user          User        @relation(fields: [userId], references: [id])
+  userId        String
+  destination   Destination @relation(fields: [destinationId], references: [id])
+  destinationId String
+}
+
+model Itinerary {
+  id          String          @id @default(cuid())
+  title       String
+  description String
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  user        User            @relation(fields: [userId], references: [id])
+  userId      String
+  items       ItineraryItem[]
+}
+
+model ItineraryItem {
+  id               String    @id @default(cuid())
+  type             String // 'flight', 'hotel', 'activity', 'restaurant'
+  title            String
+  description      String
+  startTime        DateTime
+  endTime          DateTime
+  location         String
+  cost             Float
+  bookingReference String?
+  itinerary        Itinerary @relation(fields: [itineraryId], references: [id])
+  itineraryId      String
+}
+
+model Hotel {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  address     String
+  city        String
+  country     String
+  rating      Float    @default(0)
+  priceRange  String
+  amenities   String[]
+  images      String[]
+  coordinates Json // Stores latitude and longitude
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Flight {
+  id               String   @id @default(cuid())
+  airline          String
+  flightNumber     String
+  departureAirport String
+  arrivalAirport   String
+  departureTime    DateTime
+  arrivalTime      DateTime
+  price            Float
+  currency         String
+  availableSeats   Int
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Favorite {
+  id            String      @id @default(cuid())
+  user          User        @relation(fields: [userId], references: [id])
+  userId        String
+  destination   Destination @relation(fields: [destinationId], references: [id])
+  destinationId String
+  createdAt     DateTime    @default(now())
+
+  @@unique([userId, destinationId])
+}

@@ -5,12 +5,17 @@ import Navbar from "@/components/Navbar";
 import "slick-carousel/slick/slick.css";
 import Footer from "@/components/Footer";
 import MouseTracker from "@/components/MouseTracker";
+import { Inter } from "next/font/google";
+import MainLayout from "@/components/layout/RootLayout";
+import { Providers } from "./providers";
 // import PageLoader from "@/components/PageLoader";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "Everywhere We Go Consult",
-  description:
-    "Explore the world with us. Your ultimate travel and tour consultancy.",
+  title: "Travel Made Easy",
+  description: "Your comprehensive travel planning platform",
+  keywords: "travel, vacation, trip planning, destinations, hotels, flights",
   icons: {
     icon: "/evlogo.png",
   },
@@ -73,13 +78,17 @@ export default function RootLayout({
         />
         {/* <meta name="twitter:image" content={metadata.twitter?.images?.[0]} /> */}
       </head>
-      <body>
+      <body className={inter.className}>
         <Analytics />
-        <Navbar />
-        {/* <PageLoader /> */}
-        <MouseTracker />
-        <main className="relative overflow-hidden">{children}</main>
-        <Footer />
+        <Providers>
+          <MainLayout>
+            <Navbar />
+            {/* <PageLoader /> */}
+            <MouseTracker />
+            <main className="relative overflow-hidden">{children}</main>
+            <Footer />
+          </MainLayout>
+        </Providers>
       </body>
     </html>
   );
